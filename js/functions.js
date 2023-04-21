@@ -93,9 +93,9 @@ function startHeartAnimation() {
 })(jQuery);
 
 function timeElapse(date){
-	var old_date = '2023-02-16';
-	var new_date = Date();
-	var subtime = (Date.parse(new_date) - Date.parse(old_date)) / 1000;;    //计算时间差,并将毫秒转化为秒
+    var old_date = '2023-02-16';
+    var new_date = Date();
+    var subtime = (Date.parse(new_date) - Date.parse(old_date)) / 1000;;    //计算时间差,并将毫秒转化为秒
     var days = parseInt(subtime / 86400);  //天  24*60*60*1000
     var hours = parseInt(subtime / 3600) - 24 * days;   //小时  60*60  总小时数-过去小时数=现在小时数
     var minutes = parseInt(subtime % 3600 / 60);    //分钟 - (day*24)  以60秒为一整份  取余 剩下秒数 秒数/60就是分钟数
